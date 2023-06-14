@@ -1,0 +1,289 @@
+
+.App {
+  text-align: center;
+  background-color: var(--bg-color);
+}
+
+.active{
+  background-color: var(--bg-active);
+}
+
+main{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-main);
+}
+
+/* -----------------Header----------------------- */
+
+header .brand{
+  align-self: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+header .brand a{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+
+  header .brand a span{
+    margin-left: 10px;
+    align-self: center;
+  }
+
+header, nav{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+header img{
+  filter: grayscale(0);
+  width: auto;
+  height: 50px;
+}
+
+nav a{
+margin: 10px;
+padding: 10px;
+align-self: center;
+border-radius: 10px;
+}
+
+@media (max-width: 551px) {
+  header, nav{
+    justify-content: space-evenly;
+  }
+
+  header .brand a span{
+    display: none;
+  }
+}
+
+/* -------------Header End-------------------- */
+
+/* -------------Home Page------------------- */
+
+.home{
+display: flex;
+flex-flow:column nowrap;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.container{
+  display: flex;
+  flex-flow:column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero{
+  filter: grayscale(0);
+  align-self: center;
+ width: 210px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.hero:hover{
+  box-shadow: 0px 0px 5px 0px rgba(51,0,255,1);
+}
+
+.rs{
+  font-size: 1.5rem;
+  margin-left: 10px;
+  align-self: center;
+}
+
+.icon{
+  width: 60px;
+}
+
+.container, .tech{
+  margin:1.5rem;
+}
+
+.tech .icon-holder{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.tech .icon{
+  margin: 10px;
+}
+
+.tech-title{
+font-size: 1.4rem;
+}
+
+@media (max-width: 520px) {
+ .hero{
+    width:150px
+  }
+
+  .rs{
+    font-size: 1rem;
+  }
+
+  .tech-title{
+    font-size: 1.2rem;
+  }
+
+  .tech .icon{
+    width: 50px;
+  }
+}
+
+/* ----------------------Home Page End------------------------------- */
+
+/* ----------------------Footer------------------------------- */
+
+.footer{
+  display: flex;
+  flex-flow:column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.footer .links{
+  display: flex;
+  flex-flow:row nowrap;
+  justify-content: space-evenly;
+}
+
+.links a{
+  display: block;
+  margin: 10px;
+}
+
+.links .icons{
+  font-size: 30px;
+}
+
+/* ---------------Footer End---------------------- */
+
+/* ----------------Projects---------------------- */
+
+.project-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.card{
+  max-width: 24rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.card-body{
+  margin-bottom: 10px;
+}
+
+.card-img{
+  padding : 1rem;
+  width: 22rem;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-button{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card-code,
+.card-app{
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.card-code:hover,
+.card-app:hover{
+  background-color: var(--bg-makebtn);
+}
+
+/* ---------------Project End-------------------- */
+
+/* -------------------Blog------------------------ */
+
+.blog-card{
+  max-width: 64rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:flex-start;
+  align-items: center;
+  border: 1px solid;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.blog-img{
+  width: 12rem;
+  height: auto;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 10px;
+
+}
+
+.blog-content{
+  flex-grow: 1;
+  padding: 10px;
+}
+
+
+@media (max-width: 520px) {
+  .blog-img{
+    display: none;
+  }
+ }
+ 
+ /* ----------------Blog End--------------------- */
+
+ /* -----------------Page Not Found------------------- */
+
+ .notfound{
+  max-width: 28rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+ }
+
+ .notfound-img{
+  border-radius: 10px;
+  width: 24rem;
+  height: auto;
+  margin-bottom: 1rem;
+ }
+
+ .notfound-btn{
+  padding: 10px;
+  color: var(--color-text);
+  background-color: var(--bg-main);
+  border:1px solid ;
+  border-radius: 10px;
+ }
+
+ .notfound-btn:hover{
+  background-color: var(--bg-makebtn);
+ }
+
+ /* ---------------Page not Found End--------------------- */
