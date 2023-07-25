@@ -1,7 +1,7 @@
 import { useTitle } from "../hooks/useTitle";
 
 const projects = [{'id': 1, 'name': 'Task Keeper', 'image': '/assets/taskeeper.jpg', 'description': 'Keep all your tasks together with four themes and integrated local storage', 'code': 'https://github.com/anshul-bheniye/task-keeper', 'live': 'https://task-keeper-ab.netlify.app/'},
-{'id': 2, 'name': 'Movies Repo', 'image': '/assets/moviesrepo.jpg', 'description': 'Repository for all upcoming, popular and top rated movies', 'code': 'https://github.com/anshul-bheniye/movie-repo', 'live': 'https://moviesrepo.netlify.app/'},];
+{'id': 2, 'name': 'Movies Repo', 'image': '/assets/moviesrepo.jpg', 'description': 'Repository for all upcoming, popular and top rated movies', 'code': 'https://github.com/anshul-bheniye/movie-repo', 'live': 'https://moviesrepo.netlify.app/'},{'id': 3, 'name': 'Camping Gears', 'image': '/assets/cg.png', 'description': 'Web app that sells camping gears', 'code': 'https://github.com/anshul-bheniye/camping_gears', 'live': 'https://camping-gears.netlify.app/'},];
 
 export const Projects = () => {
 useTitle('Projects');
